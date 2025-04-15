@@ -40,6 +40,10 @@
   // remember when you simplify the code you can you the arrow function to make it cleanr, come back to look at the syntax, he provides 2 alternatives but they should make sense first
   
     // Array.prototype.every() // is everyone 19 or older?
+    //the keyword here is EVERY, the method will check for every one watch
+
+    const allAdults = people.every(person => ((new Date()).getFullYear() - person.year >= 19));
+    console.log({allAdults});
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
